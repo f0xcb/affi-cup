@@ -1,0 +1,33 @@
+home:
+  alias: '/home'
+
+pages:
+  theme: chassis
+  markdown:
+    extra: true
+  process:
+    markdown: true
+    twig: true
+  frontmatter:
+    process_twig: true
+
+session:
+  initialize: false
+  name: grav-site
+
+languages:
+  supported: [ de, en ]
+  include_default_lang: false
+
+cache:
+  gzip: true
+
+images:
+  default_image_quality: 70
+  defaults:
+    loading: lazy
+
+pwd_regex: '^[ -~]{8,}$'
+
+env:
+  state: production
